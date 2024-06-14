@@ -9,7 +9,6 @@ class ClassifiedWordChecker {
 
     public function check($emailText) {
         $containsClassified = false;
-        $censoredText = $emailText;
 
         foreach ($this->classifiedWords as $word) {
             if (stripos($emailText, $word) !== false) {
